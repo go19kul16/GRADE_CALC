@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import altair as alt
+import openpyxl
 
 st.set_page_config(page_title="GRADE CALCULATOR ",page_icon="✅",layout="wide")
 st.title(":green[GRADE] :blue[CALCULATOR]")
