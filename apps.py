@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="GRADE CALCULATOR ",page_icon="✅",layout="wide")
 st.title(":green[GRADE] :blue[CALCULATOR]")
-col1,col3=st.columns(2)
+col1,col3=st.tabs(["Table","Bar Graph"])
 df=pd.read_excel("GRADE.xlsx",index_col=0,engine="openpyxl")
    
 with col1:
@@ -17,7 +17,7 @@ with col1:
         d=inte
         df1=df.loc[d]
         st.table(df1)
-        
+     with col3:   
     st.subheader("TO SEE IN :blue[BAR GRAPH]")
     st.markdown("Press the :red[Display] Button")
     if st.button("DISPLAY"):
