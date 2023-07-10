@@ -17,7 +17,7 @@ with col1:
         d=inte
         df1=df.loc[d]
         st.table(df1)
-     with col3:   
+with col3:   
     st.subheader("TO SEE IN :blue[BAR GRAPH]")
     st.markdown("Press the :red[Display] Button")
     if st.button("DISPLAY"):
