@@ -7,7 +7,7 @@ import altair as alt
 st.set_page_config(page_title="GRADE CALCULATOR ",page_icon="✅",layout="wide")
 st.title(":green[GRADE] :blue[CALCULATOR]")
 col1,col3=st.columns(2)
-df=pd.read_excel("data/GRADE.xlsx",index_col=0,engine='openpyxl')
+df=pd.read_excel("GRADE.xlsx",index_col=0,engine='openpyxl')
    
 with col1:
     internal=0
