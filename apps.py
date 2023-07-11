@@ -8,7 +8,7 @@ st.set_page_config(page_title="GRADE CALCULATOR ",page_icon="✅",layout="wide")
 
 st.title(":green[GRADE] :blue[CALCULATOR]")
 col1,col3=st.tabs(["TABLE","BAR GRAPH"])
-df=pd.read_excel("GRADE.xlsx",engine='openpyxl')
+df=pd.read_excel("GRADE.xlsx",index_col=0,engine='openpyxl')
    
 with col1:
     internal=0
