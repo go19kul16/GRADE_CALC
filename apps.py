@@ -16,7 +16,7 @@ with col1:
     internal=st.number_input("ENTER YOUR INTERNAL MARK:",step=None,min_value=0,max_value=50)
     inte=int(float(internal))
     if st.button("Submit"):
-        d=inte
+        d=inte 
         df1=df.loc[d]
         st.table(df1)
 with col3:   
